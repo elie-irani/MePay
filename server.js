@@ -8,6 +8,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(process.env.APP_PORT, process.env.APP_URL, () => {
-  console.log(process.env);
   console.log(`Server running at http://${process.env.APP_URL}:${process.env.APP_PORT}/`);
 });
